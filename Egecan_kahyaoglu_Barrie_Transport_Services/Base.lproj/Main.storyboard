@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egecan_kahyaoglu_Barrie_Transport_Services" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrie Transport Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kew-8Z-9Lm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Egecan Kahyaoglu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD4-0B-I0a">
+                                <rect key="frame" x="0.0" y="841" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gbj-DQ-Lja">
+                                <rect key="frame" x="0.0" y="79" width="414" height="762"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gbj-DQ-Lja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Apb-D0-bzG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pD4-0B-I0a" secondAttribute="trailing" id="COB-oR-G2h"/>
+                            <constraint firstItem="gbj-DQ-Lja" firstAttribute="top" secondItem="kew-8Z-9Lm" secondAttribute="bottom" id="HqU-4K-6hx"/>
+                            <constraint firstItem="kew-8Z-9Lm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JFk-lW-mFx"/>
+                            <constraint firstItem="pD4-0B-I0a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jc5-MA-9X1"/>
+                            <constraint firstItem="pD4-0B-I0a" firstAttribute="top" secondItem="gbj-DQ-Lja" secondAttribute="bottom" id="R9e-7m-Bae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kew-8Z-9Lm" secondAttribute="trailing" id="T3o-bv-q5X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gbj-DQ-Lja" secondAttribute="trailing" id="Ygn-ms-00Z"/>
+                            <constraint firstItem="pD4-0B-I0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzZ-zp-K2O"/>
+                            <constraint firstItem="kew-8Z-9Lm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="stI-id-V4c"/>
+                            <constraint firstItem="kew-8Z-9Lm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zeK-hw-Ro1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="gbj-DQ-Lja" id="m9q-q5-HXO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+</document>
